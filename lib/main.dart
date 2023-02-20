@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(FbAuthController().currentUser!.toString());
+    // log(FbAuthController().currentUser!.toString());
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -38,7 +38,6 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        
       ),
       initialRoute: '/',
       routes: {

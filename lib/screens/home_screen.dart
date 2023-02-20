@@ -37,19 +37,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 30),
                 Text(
-                  user.displayName!.isNotEmpty
+                  user.displayName?.isNotEmpty ?? false
                       ? user.displayName!
                       : 'Anonymous User',
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  user.phoneNumber!.isNotEmpty
+                  user.phoneNumber?.isNotEmpty ?? false
                       ? user.phoneNumber!
                       : 'No Phone Linked',
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  user.email!.isNotEmpty ? user.email! : 'No Email Linked',
+                  user.email?.isNotEmpty ?? false
+                      ? user.email!
+                      : 'No Email Linked',
                 ),
                 const SizedBox(height: 10),
                 Text(
